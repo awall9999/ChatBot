@@ -1,13 +1,19 @@
+/*
+ChatBot 1.0
+(c) Alain Mauer
+https://alainsprojects.com/2025/05/03/the-chatbot/
+*/
+
 int Mouth[5] = {2,3,4,5,6}; //define the LEDs for the Mouth
 int Eyes[3] = {10,11,12}; // define the LEDs for the Eyes
+int TreshHold=15; // set the Audiotreshold
 int val = 0; 
 int analogPin = A0;  
 int MouthCounter = 0;
 unsigned long Timer = 0;
 int EyeTime =1000;
 int BlinkStatus=0;
-int TreshHold=15;
-//int analogvalue = 0;
+
 void EyeOpen(){
   digitalWrite(Eyes[0],HIGH);digitalWrite(Eyes[1],LOW);digitalWrite(Eyes[2],HIGH);
   }
